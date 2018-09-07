@@ -9,6 +9,10 @@ header{
     grid-template-columns: 50;
 }
 
+header>p{
+    margin-left:5px;
+}
+
 hr{
     display:block;
     border-width: 3px;
@@ -31,8 +35,12 @@ hr{
 }
 
 #power_rangers{
-    width:50%;
-    height:50%;
+    width:75%;
+    height:75%;
+    border-radius: 5%;
+    margin-left:15%;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 
 h1{
@@ -47,10 +55,16 @@ main h2{
     font-size: 1em;
 }
 
+#hr2{
+    border-color:#7f888f;
+    border-width: 1px;
+    margin-top: 0%;
+    border-top: 2px solid;
+}
+
 main{
     display: grid;
     grid-template-columns: 2;
-    grid-template-rows:10;
 }
 
 #negrita{
@@ -71,8 +85,12 @@ main{
     grid-column-start: 1;
     grid-row: 1/10;
     display:flex;
+    margin-top:20px;
+    margin-left:5%;
+    margin-bottom: 0%;
     flex-direction: column;
 }
+
 
 footer{
     display:grid;
@@ -97,14 +115,13 @@ footer{
 
 .item i{
     grid-column-start:1;
+    font-size:60px;
+    margin-left:1em;
+    margin-top:20px;
 }
 
-.item h3{
+.item .contenido{
     grid-column-start:2;
-}
-
-.item p{
-    grid-column-start: 2;
 }
 
 #item2{
@@ -137,13 +154,24 @@ footer hr{
     margin-top: 0;
     margin-left: 0;
 }
-#boton1{
+button{
     background-color:white;
     text-align: center;
     border-radius: 5px;
     border:solid;
     border-width: 1.5px;
     padding: 10px 17px 8px; 
-    border-color:#eb6f62;
-    color:#eb6f62;
+    border-color:#f56a6a;
+    color:#f56a6a;
+    width:275px;
 }
+
+button:hover span{
+    color:blue;
+}
+
+button:hover{
+    border-color:blue;
+}
+
+
